@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="price_hint">Enter $ amount</string>
+    <string name="time_hint">Time in years</string>
+    <string name="percentage_hint">(0&#8211;100)</string>
+    <string name="purchase_price_label">Purchase Price:</string>
+    <string name="down_payment_label">Down Payment:</string>
+    <string name="mortgage_term_label">Mortgage Term:</string>
+    <string name="interest_rate_label">Annual Interest Rate:</string>
+    <string name="first_payment_date_label">First Payment Date:</string>
+    <string name="monthly_payment_label">Monthly Payment:</string>
+    <string name="total_payment_label">Total Payment:</string>
+    <string name="payoff_date_label">Payoff Date:</string>
+    <string name="price">$</string>
+    <string name="percentage">%</string>
+    <string name="time">years</string>
+    <string name="submit_button">Calculate</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

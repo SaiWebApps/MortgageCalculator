@@ -1,0 +1,207 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:shrinkColumns="1" >
+
+            <TableRow
+                android:id="@+id/purchase_price_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/purchase_price_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/purchase_price"
+                    android:gravity="center"
+                    android:hint="@string/price_hint" >
+                </EditText>
+
+                <TextView
+                    android:text="@string/price"
+                    android:textSize="16sp" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/down_payment_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/down_payment_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/down_payment"
+                    android:gravity="center"
+                    android:hint="@string/percentage_hint" >
+                </EditText>
+
+                <TextView
+                    android:text="@string/percentage"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/down_payment_dollars"
+                    android:text=""
+                    android:textSize="16sp" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/mortgage_term_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/mortgage_term_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/mortgage_term"
+                    android:gravity="center"
+                    android:hint="@string/time_hint" >
+                </EditText>
+
+                <TextView
+                    android:text="@string/time"
+                    android:textSize="16sp" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/interest_rate_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/interest_rate_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/interest_rate"
+                    android:gravity="center"
+                    android:hint="@string/percentage_hint" >
+                </EditText>
+
+                <TextView
+                    android:text="@string/percentage"
+                    android:textSize="16sp" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/first_payment_date_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26sp" >
+
+                <TextView
+                    android:text="@string/first_payment_date_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <DatePicker
+                    android:id="@+id/orig_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:calendarViewShown="false" >
+                </DatePicker>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:text="@string/submit_button" >
+                </Button>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/results_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/monthly_payment_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/monthly_payment"
+                    android:text=""
+                    android:textSize="18sp" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/total_payment_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/total_payment"
+                    android:text=""
+                    android:textSize="18sp" >
+                </TextView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text="@string/payoff_date_label"
+                    android:textSize="18sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/payoff_date"
+                    android:text=""
+                    android:textSize="18sp" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
